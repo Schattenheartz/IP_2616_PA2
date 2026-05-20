@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
     <title>Algebra Universitaria</title>
 </head>
 <body>
-    <h1>Algebra Universitaria</h1>
+    <!-- -->
+    <div class="layout">
+        <!-- Lado Izquierdo -->
+        <div class="contenedor">
+            <h1>Función Cuadrática</h1>
+            <!-- Formulario de entrada -->
+            <!-- A -->
+            <label>Valor de A:</label>
+            <input type="number" id="a">
+            <!-- B  -->
+            <label>Valor de B:</label>
+            <input type="number" id="b">
+            <!-- C -->
+            <label>Valor de C:</label>
+            <input type="number" id="c">
+            <!-- Boton-->
+            <button onclick="analizarFuncion()">
+                Calcular
+            </button>
+            <!-- Resultados -->
+            <div id="resultado"></div>
+        </div>
+        <!-- Grafica en el Lado Derecho -->
+        <div class="panel-grafica">
+            <canvas id="grafica"></canvas>
+        </div>
+    </div>
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Enlace con JavaScript -->
+    <script src="javascripts.js"></script>
+
 </body>
 </html>
